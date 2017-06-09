@@ -1,4 +1,4 @@
-package com.example.ywhan.music_demo;
+package com.example.ywhan.music_demo.activity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -13,6 +13,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.example.ywhan.music_demo.R;
 
 /**
  * Created by ywhan on 2017/6/8/008.
@@ -35,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setHomeAsUpIndicator(R.mipmap.ic_action_overflow);
         }
-        //navView.setCheckedItem(R.id.mail);
         navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {

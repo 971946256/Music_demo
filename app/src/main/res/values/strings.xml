@@ -7,4 +7,7 @@
     <string name="drive">驾驶</string>
     <string name="exit">退出</string>
     <string name="test">测试</string>
+    <string name="local_music">本地音乐</string>
+    <string name="left_brackets">(</string>
+    <string name="right_brackets">)</string>
 </resources>
