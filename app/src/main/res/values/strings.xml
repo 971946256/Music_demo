@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Music_demo</string>
+    <string name="search">Search</string>
+    <string name="mail">消息</string>
+    <string name="skin">皮肤</string>
+    <string name="setup">设置</string>
+    <string name="drive">驾驶</string>
+    <string name="exit">退出</string>
+    <string name="test">测试</string>
+</resources>

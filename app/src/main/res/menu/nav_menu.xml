@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mail"
+        android:icon="@mipmap/ic_action_mail"
+        android:title="@string/mail" />
+    <item
+        android:id="@+id/skin"
+        android:icon="@mipmap/ic_action_tshirt"
+        android:title="@string/skin" />
+    <item
+        android:id="@+id/set_up"
+        android:icon="@mipmap/ic_action_gear"
+        android:title="@string/setup" />
+    <item
+        android:id="@+id/drive"
+        android:icon="@mipmap/ic_action_wheel"
+        android:title="@string/drive" />
+    <item
+        android:id="@+id/exit"
+        android:icon="@mipmap/ic_action_io"
+        android:title="@string/exit" />
+</menu>
