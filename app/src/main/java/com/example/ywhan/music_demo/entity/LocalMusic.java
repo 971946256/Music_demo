@@ -2,6 +2,7 @@ package com.example.ywhan.music_demo.entity;
 
 /**
  * Created by Administrator on 2017/6/9/009.
+ * 本地歌曲顶部自定义类
  */
 
 public class LocalMusic {

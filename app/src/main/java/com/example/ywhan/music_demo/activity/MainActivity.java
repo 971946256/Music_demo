@@ -18,6 +18,7 @@ import com.example.ywhan.music_demo.R;
 
 /**
  * Created by ywhan on 2017/6/8/008.
+ * 主函数
  */
 
 public class MainActivity extends AppCompatActivity {

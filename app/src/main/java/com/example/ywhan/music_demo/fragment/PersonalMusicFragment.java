@@ -25,20 +25,21 @@ import java.util.Map;
 
 /**
  * Created by Administrator on 2017/6/9/009.
+ * 本地歌曲首页
  */
 
 public class PersonalMusicFragment extends Fragment {
     Context mContext;
     View view;
-    ListView listView;
-    ExpandableListView expandableListView;
+    ListView listView;//顶部listView
+    ExpandableListView expandableListView;//歌单listView
     String[] top = new String[]{"本地音乐", "最近播放", "下载管理", "我的电台", "我的收藏"};
     Integer[] topImage = new Integer[]{R.mipmap.ic_action_music_1, R.mipmap.ic_action_record, R.mipmap.ic_action_download
             , R.mipmap.ic_action_signal, R.mipmap.ic_action_heart};
-    private List<LocalMusic> musicList = new ArrayList<>();
-    private List<LocalFormType> parentList = new ArrayList<>();
-    private List<LocalSongForm> childList = new ArrayList<>();
-    private Map<String, List<LocalSongForm>> map = new HashMap<>();
+    private List<LocalMusic> musicList = new ArrayList<>();//本地歌曲栏目列表
+    private List<LocalFormType> parentList = new ArrayList<>();//歌单父级列表
+    private List<LocalSongForm> childList = new ArrayList<>();//歌单子级列表
+    private Map<String, List<LocalSongForm>> map = new HashMap<>();//父级对应子级的集合
 
     @Nullable
     @Override

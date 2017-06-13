@@ -17,6 +17,7 @@ import java.util.Map;
 
 /**
  * Created by Administrator on 2017/6/9/009.
+ * 歌单的适配器
  */
 
 public class SongFormAdapter extends BaseExpandableListAdapter {
@@ -109,11 +110,11 @@ public class SongFormAdapter extends BaseExpandableListAdapter {
     }
 
     private class ViewHolder {
-        ImageView imgSetUp;
-        ImageView imgForm;
-        TextView tvTypeName;
-        TextView tvFormNumber;
-        TextView tvFormName;
-        TextView tvSongNumber;
+        ImageView imgSetUp;//歌单父级设置按钮
+        ImageView imgForm;//歌单图片
+        TextView tvTypeName;//歌单类型
+        TextView tvFormNumber;//父级对应子项歌单的数量
+        TextView tvFormName;//歌单名
+        TextView tvSongNumber;//一个歌单中歌曲的数目
     }
 }

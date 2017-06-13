@@ -16,6 +16,7 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2017/6/9/009.
+ * 顶部listView适配器
  */
 
 public class LocalMusicAdapter extends ArrayAdapter<LocalMusic> {
