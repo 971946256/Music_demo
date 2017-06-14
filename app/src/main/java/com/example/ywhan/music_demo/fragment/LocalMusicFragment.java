@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.example.ywhan.music_demo.R;
 
@@ -14,16 +13,16 @@ import com.example.ywhan.music_demo.R;
  * Created by Administrator on 2017/6/14/014.
  */
 
-public class FriendsFragment extends Fragment {
+public class LocalMusicFragment extends Fragment {
     View view;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        if (view == null) {
-            view = inflater.inflate(R.layout.song_form_parent_item, container,false);
+        if (view ==null){
+            view = inflater.inflate(R.layout.local_music_listview,container,false);
+
         }
-        TextView tv = (TextView) view.findViewById(R.id.form_type);
-        tv.setText("pyq");
-        return view;
+
+        return super.onCreateView(inflater, container, savedInstanceState);
     }
 }

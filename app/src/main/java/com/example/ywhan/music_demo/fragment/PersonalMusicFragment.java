@@ -1,13 +1,10 @@
 package com.example.ywhan.music_demo.fragment;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,13 +13,12 @@ import android.widget.ExpandableListView;
 import android.widget.ListView;
 
 import com.example.ywhan.music_demo.R;
-import com.example.ywhan.music_demo.activity.LocalMusicAcivity;
+import com.example.ywhan.music_demo.activity.LocalMusicActivity;
 import com.example.ywhan.music_demo.adapter.LocalMusicAdapter;
 import com.example.ywhan.music_demo.adapter.SongFormAdapter;
 import com.example.ywhan.music_demo.entity.LocalFormType;
 import com.example.ywhan.music_demo.entity.LocalMusic;
 import com.example.ywhan.music_demo.entity.LocalSongForm;
-import com.example.ywhan.music_demo.interfaces.setActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -77,23 +73,23 @@ public class PersonalMusicFragment extends Fragment {
         Intent intent;
         switch (music.getName()) {
             case "本地音乐":
-                intent = new Intent(mContext, LocalMusicAcivity.class);
+                intent = new Intent(mContext, LocalMusicActivity.class);
                 startActivity(intent);
                 break;
             case "最近播放":
-                intent = new Intent(mContext, LocalMusicAcivity.class);
+                intent = new Intent(mContext, LocalMusicActivity.class);
                 startActivity(intent);
                 break;
             case "下载管理":
-                intent = new Intent(mContext, LocalMusicAcivity.class);
+                intent = new Intent(mContext, LocalMusicActivity.class);
                 startActivity(intent);
                 break;
             case "我的电台":
-                intent = new Intent(mContext, LocalMusicAcivity.class);
+                intent = new Intent(mContext, LocalMusicActivity.class);
                 startActivity(intent);
                 break;
             case "我的收藏":
-                intent = new Intent(mContext, LocalMusicAcivity.class);
+                intent = new Intent(mContext, LocalMusicActivity.class);
                 startActivity(intent);
                 break;
             default:

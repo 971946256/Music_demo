@@ -17,12 +17,12 @@ import com.example.ywhan.music_demo.R;
  * 本地音乐主页面
  */
 
-public class LocalMusicAcivity extends AppCompatActivity {
+public class LocalMusicActivity extends AppCompatActivity {
     Context mContext;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mContext = LocalMusicAcivity.this;
+        mContext = LocalMusicActivity.this;
         setContentView(R.layout.local_music_activity);
         Toolbar toolbar = (Toolbar) findViewById(R.id.local_music_toolbar);
         setSupportActionBar(toolbar);
