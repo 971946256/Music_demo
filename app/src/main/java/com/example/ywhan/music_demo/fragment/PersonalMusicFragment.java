@@ -1,22 +1,28 @@
 package com.example.ywhan.music_demo.fragment;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ExpandableListView;
 import android.widget.ListView;
 
 import com.example.ywhan.music_demo.R;
+import com.example.ywhan.music_demo.activity.LocalMusicAcivity;
 import com.example.ywhan.music_demo.adapter.LocalMusicAdapter;
 import com.example.ywhan.music_demo.adapter.SongFormAdapter;
 import com.example.ywhan.music_demo.entity.LocalFormType;
 import com.example.ywhan.music_demo.entity.LocalMusic;
 import com.example.ywhan.music_demo.entity.LocalSongForm;
+import com.example.ywhan.music_demo.interfaces.setActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,8 +40,7 @@ public class PersonalMusicFragment extends Fragment {
     ListView listView;//顶部listView
     ExpandableListView expandableListView;//歌单listView
     String[] top = new String[]{"本地音乐", "最近播放", "下载管理", "我的电台", "我的收藏"};
-    Integer[] topImage = new Integer[]{R.mipmap.ic_action_music_1, R.mipmap.ic_action_record, R.mipmap.ic_action_download
-            , R.mipmap.ic_action_signal, R.mipmap.ic_action_heart};
+    Integer[] topImage = new Integer[]{R.mipmap.wj, R.mipmap.x4, R.mipmap.wd, R.mipmap.x6, R.mipmap.w8};
     private List<LocalMusic> musicList = new ArrayList<>();//本地歌曲栏目列表
     private List<LocalFormType> parentList = new ArrayList<>();//歌单父级列表
     private List<LocalSongForm> childList = new ArrayList<>();//歌单子级列表
@@ -57,10 +62,50 @@ public class PersonalMusicFragment extends Fragment {
 
     private void initView() {
         listView = (ListView) view.findViewById(R.id.music_top_listview);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                LocalMusic music = musicList.get(position);
+                setActivity(music);
+            }
+        });
         expandableListView = (ExpandableListView) view.findViewById(R.id.self_music_form);
     }
 
+    /*Activity跳转*/
+    private void setActivity(LocalMusic music) {
+        Intent intent;
+        switch (music.getName()) {
+            case "本地音乐":
+                intent = new Intent(mContext, LocalMusicAcivity.class);
+                startActivity(intent);
+                break;
+            case "最近播放":
+                intent = new Intent(mContext, LocalMusicAcivity.class);
+                startActivity(intent);
+                break;
+            case "下载管理":
+                intent = new Intent(mContext, LocalMusicAcivity.class);
+                startActivity(intent);
+                break;
+            case "我的电台":
+                intent = new Intent(mContext, LocalMusicAcivity.class);
+                startActivity(intent);
+                break;
+            case "我的收藏":
+                intent = new Intent(mContext, LocalMusicAcivity.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+    }
+
+    /*数据初始化*/
     private void initData() {
+        musicList.clear();
+        parentList.clear();
+        childList.clear();
         for (int i = 0; i < top.length; i++) {
             LocalMusic music = new LocalMusic(top[i], topImage[i], "0");
             musicList.add(music);

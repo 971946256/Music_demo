@@ -10,7 +10,7 @@ public class LocalMusic {
     private int imageId;
     private String number;
 
-    public LocalMusic(String name, int imageId,String number) {
+    public LocalMusic(String name, int imageId, String number) {
         this.name = name;
         this.imageId = imageId;
         this.number = number;
@@ -23,7 +23,8 @@ public class LocalMusic {
     public int getImageId() {
         return imageId;
     }
-    public String getNumber(){
+
+    public String getNumber() {
         return number;
     }
 }
