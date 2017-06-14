@@ -10,4 +10,12 @@
     <string name="local_music">本地音乐</string>
     <string name="left_brackets">(</string>
     <string name="right_brackets">)</string>
+    <string name="menu">菜单</string>
+    <string name="music_name">单曲</string>
+    <string name="singer">歌手</string>
+    <string name="album">专辑</string>
+    <string name="folder">文件夹</string>
+    <string name="play_all">播放全部</string>
+    <string name="more_choice">多选</string>
+
 </resources>
