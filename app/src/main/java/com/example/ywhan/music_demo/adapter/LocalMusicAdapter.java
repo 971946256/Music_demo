@@ -34,7 +34,7 @@ public class LocalMusicAdapter extends ArrayAdapter<LocalMusic> {
         ViewHolder holder = new ViewHolder();
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(resourceId, null);
-            holder.imageView = (ImageView) convertView.findViewById(R.id.local_image);
+            //holder.imageView = (ImageView) convertView.findViewById(R.id.local_image);
             holder.tvName = (TextView) convertView.findViewById(R.id.local_name);
             holder.tvNumber = (TextView) convertView.findViewById(R.id.local_number);
             convertView.setTag(holder);

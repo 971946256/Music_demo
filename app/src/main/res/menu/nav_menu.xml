@@ -10,7 +10,7 @@
         android:title="@string/skin" />
     <item
         android:id="@+id/set_up"
-        android:icon="@mipmap/ic_action_gear"
+        android:icon="@mipmap/ag6"
         android:title="@string/setup" />
     <item
         android:id="@+id/drive"

@@ -25,7 +25,7 @@
             android:text="@string/test"
             android:layout_marginTop="15dp"
             android:layout_marginStart="20dp"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/song_number"
@@ -34,6 +34,7 @@
             android:text="@string/test"
             android:layout_marginTop="2dp"
             android:layout_marginStart="20dp"
-            android:layout_marginBottom="3dp"/>
+            android:layout_marginBottom="3dp"
+            android:textSize="12sp"/>
     </LinearLayout>
 </LinearLayout>

@@ -1,39 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="?attr/actionBarSize"
+    android:layout_height="wrap_content"
     android:orientation="horizontal">
 
-    <LinearLayout
+    <ImageView
         android:id="@+id/tab_local_music"
         android:layout_width="?attr/actionBarSize"
-        android:layout_height="?attr/actionBarSize">
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/local_music" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/local_music" />
-    </LinearLayout>
-
-    <LinearLayout
+    <ImageView
         android:id="@+id/tab_discover"
         android:layout_width="?attr/actionBarSize"
-        android:layout_height="?attr/actionBarSize">
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/network_music" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/network_music" />
-    </LinearLayout>
-
-    <LinearLayout
+    <ImageView
         android:id="@+id/tab_friends"
         android:layout_width="?attr/actionBarSize"
-        android:layout_height="?attr/actionBarSize">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/friends_music" />
-    </LinearLayout>
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/friends_music" />
 </LinearLayout>

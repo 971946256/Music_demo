@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity.LocalMusicAcivity"
+        <activity android:name=".activity.LocalMusicActivity"
             android:label="@string/local_music"/>
     </application>
 

@@ -18,6 +18,7 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
         <include
+            android:id="@+id/local_tab"
             layout="@layout/music_pager_top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

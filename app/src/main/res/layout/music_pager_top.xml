@@ -12,45 +12,49 @@
             android:id="@+id/music_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/music_name"
-            android:textSize="18sp" />
+            android:textSize="14sp"
+            android:textColor="@drawable/local_song"/>
 
         <TextView
             android:id="@+id/music_singer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/singer"
-            android:textSize="18sp" />
+            android:textSize="14sp"
+            android:textColor="@drawable/local_song"/>
 
         <TextView
             android:id="@+id/music_album"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/album"
-            android:textSize="18sp" />
+            android:textSize="14sp"
+            android:textColor="@drawable/local_song"/>
 
         <TextView
             android:id="@+id/music_folder"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/folder"
-            android:textSize="18sp" />
+            android:textSize="14sp"
+            android:textColor="@drawable/local_song"/>
     </LinearLayout>
 
     <View

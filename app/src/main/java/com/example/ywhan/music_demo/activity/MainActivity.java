@@ -16,7 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.ywhan.music_demo.R;
@@ -28,6 +28,8 @@ import com.example.ywhan.music_demo.fragment.PersonalMusicFragment;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.example.ywhan.music_demo.activity.LocalMusicActivity.setTabSelected;
+
 /**
  * Created by ywhan on 2017/6/8/008.
  * 主函数
@@ -37,9 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Context mContext;
     private ViewPager viewPager;//主内容viewPager
     private DrawerLayout mDrawerLayout;//侧滑菜单
-    private LinearLayout tabLocalMusic;//本地音乐按钮
-    private LinearLayout tabDiscover;//网络音乐按钮
-    private LinearLayout tabFriends;//朋友圈按钮
+    private ImageView tabLocalMusic;//本地音乐按钮
+    private ImageView tabDiscover;//网络音乐按钮
+    private ImageView tabFriends;//朋友圈按钮
     private List<Fragment> mList = new ArrayList<>();//页面内容列表
     private MyMainViewPagerAdapter adapter;
 
@@ -100,7 +102,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
+                if (position==0){
+                    setTabSelected(positionOffset,tabLocalMusic,tabDiscover);
+                }else if (position==1){
+                    setTabSelected(positionOffset,tabDiscover,tabFriends);
+                }
             }
 
             //通过滑动切换时对toolbar中的按钮进行状态改变
@@ -116,13 +122,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             }
         });
-        tabLocalMusic = (LinearLayout) findViewById(R.id.tab_local_music);
+        tabLocalMusic = (ImageView) findViewById(R.id.tab_local_music);
         tabLocalMusic.setOnClickListener(this);
         //默认本地音乐为第一页
         tabLocalMusic.setSelected(true);
-        tabDiscover = (LinearLayout) findViewById(R.id.tab_discover);
+        tabDiscover = (ImageView) findViewById(R.id.tab_discover);
         tabDiscover.setOnClickListener(this);
-        tabFriends = (LinearLayout) findViewById(R.id.tab_friends);
+        tabFriends = (ImageView) findViewById(R.id.tab_friends);
         tabFriends.setOnClickListener(this);
     }
 
